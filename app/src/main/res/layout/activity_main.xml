@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#6b0e38"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#f5ecec"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Patient Weight Convertor"
+        />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center"
+        android:hint="Enter weight of patient"
+        android:textSize="25dp"
+
+
+        />
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RadioButton
+            android:id="@+id/weight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f7f4f4"
+            android:onClick="onClickradioButton"
+            android:text="convert pound to killogram" />
+
+
+        <RadioButton
+            android:id="@+id/weight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#d6d3d7"
+            android:onClick="onClickradioButton"
+            android:text="convert  to killogram to pound" />
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="result"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:padding="5dp"
+            android:background="#fff"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c16aa6"
+            android:onClick="convert"
+            android:text="Convert"
+            android:textColor="#020000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/doc"
+            android:cropToPadding="true" />
+
+
+</RadioGroup>
+
+</LinearLayout>
